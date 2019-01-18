@@ -172,7 +172,8 @@ extern "C" {
 # define FORMAT_TU "\"%hn\""      /* will print garbage */
 #endif
 
-typedef struct _dwg_time_bll {
+typedef struct _dwg_time_bll
+{
   BITCODE_BL days;
   BITCODE_BL ms;
   BITCODE_BD value;
@@ -2667,14 +2668,14 @@ typedef struct _dwg_ODALeader_Line //// as documented by ODA
 
 typedef struct _dwg_LEADER_ArrowHead
 {
-  struct _dwg_object_MULTILEADER *parent;
+  struct _dwg_entity_MULTILEADER *parent;
   BITCODE_BL is_default;
   BITCODE_H arrowhead;
 } Dwg_LEADER_ArrowHead;
 
 typedef struct _dwg_LEADER_BlockLabel
 {
-  struct _dwg_object_MULTILEADER *parent;
+  struct _dwg_entity_MULTILEADER *parent;
   BITCODE_H attdef;
   BITCODE_TV label_text;
   BITCODE_BS ui_index;
@@ -2685,7 +2686,7 @@ typedef struct _dwg_LEADER_BlockLabel
    the reverse-engineered format */
 typedef struct _dwg_ODALeader
 {
-  struct _dwg_object_MULTILEADER *parent;
+  struct _dwg_entity_MULTILEADER *parent;
   BITCODE_B is_valid;
   BITCODE_B unknown;
   BITCODE_3BD connection;
@@ -2702,7 +2703,7 @@ typedef struct _dwg_ODALeader
 
 typedef struct _dwg_LEADER_Node
 {
-  struct _dwg_object_MULTILEADER *parent;
+  struct _dwg_entity_MULTILEADER *parent;
   BITCODE_B has_lastleaderlinepoint;    /*!< DXF 290 */
   BITCODE_B has_dogleg;                 /*!< DXF 291 */
   BITCODE_3BD lastleaderlinepoint;      /*!< DXF 10 */
@@ -2802,7 +2803,7 @@ typedef struct _dwg_MLEADER_AnnotContext
 } Dwg_MLEADER_AnnotContext;
 
 // dbmleader.h
-typedef struct _dwg_object_MULTILEADER
+typedef struct _dwg_entity_MULTILEADER
 {
   struct _dwg_object_entity *parent;
 
@@ -5191,7 +5192,7 @@ typedef struct _dwg_object_object
     Dwg_Object_ASSOCPERSSUBENTMANAGER *ASSOCPERSSUBENTMANAGER;
     Dwg_Object_ASSOCPLANESURFACEACTIONBODY *ASSOCPLANESURFACEACTIONBODY;
     Dwg_Object_CELLSTYLEMAP *CELLSTYLEMAP;
-    //TODO Dwg_Object_DATATABLE *DATATABLE;
+    Dwg_Object_DATATABLE *DATATABLE;
     Dwg_Object_DBCOLOR *DBCOLOR;
     //TODO Dwg_Object_DETAILVIEWSTYLE *DETAILVIEWSTYLE;
     Dwg_Object_DICTIONARY *DICTIONARY;
