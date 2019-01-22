@@ -7223,7 +7223,7 @@ static int test_DIMENSION_ALIGNED (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD clone_ins_pt;
+    BITCODE_2RD clone_ins_pt;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "clone_ins_pt", &clone_ins_pt, NULL)
         && !memcmp(&clone_ins_pt, &dimension_aligned->clone_ins_pt, sizeof(dimension_aligned->clone_ins_pt)))
       pass ("DIMENSION_ALIGNED.clone_ins_pt");
@@ -7233,7 +7233,7 @@ static int test_DIMENSION_ALIGNED (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD def_pt;
+    BITCODE_3BD def_pt;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "def_pt", &def_pt, NULL)
         && !memcmp(&def_pt, &dimension_aligned->def_pt, sizeof(dimension_aligned->def_pt)))
       pass ("DIMENSION_ALIGNED.def_pt");
@@ -7297,7 +7297,7 @@ static int test_DIMENSION_ALIGNED (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD extrusion;
+    BITCODE_3BD extrusion;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &dimension_aligned->extrusion, sizeof(dimension_aligned->extrusion)))
       pass ("DIMENSION_ALIGNED.extrusion");
@@ -7415,7 +7415,7 @@ static int test_DIMENSION_ALIGNED (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD ins_scale;
+    BITCODE_3BD ins_scale;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "ins_scale", &ins_scale, NULL)
         && !memcmp(&ins_scale, &dimension_aligned->ins_scale, sizeof(dimension_aligned->ins_scale)))
       pass ("DIMENSION_ALIGNED.ins_scale");
@@ -7471,7 +7471,7 @@ static int test_DIMENSION_ALIGNED (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD text_midpt;
+    BITCODE_2RD text_midpt;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "text_midpt", &text_midpt, NULL)
         && !memcmp(&text_midpt, &dimension_aligned->text_midpt, sizeof(dimension_aligned->text_midpt)))
       pass ("DIMENSION_ALIGNED.text_midpt");
@@ -7645,7 +7645,7 @@ static int test_DIMENSION_ANG2LN (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD clone_ins_pt;
+    BITCODE_2RD clone_ins_pt;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "clone_ins_pt", &clone_ins_pt, NULL)
         && !memcmp(&clone_ins_pt, &dimension_ang2ln->clone_ins_pt, sizeof(dimension_ang2ln->clone_ins_pt)))
       pass ("DIMENSION_ANG2LN.clone_ins_pt");
@@ -7655,7 +7655,7 @@ static int test_DIMENSION_ANG2LN (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD def_pt;
+    BITCODE_3BD def_pt;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "def_pt", &def_pt, NULL)
         && !memcmp(&def_pt, &dimension_ang2ln->def_pt, sizeof(dimension_ang2ln->def_pt)))
       pass ("DIMENSION_ANG2LN.def_pt");
@@ -7701,7 +7701,7 @@ static int test_DIMENSION_ANG2LN (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD extrusion;
+    BITCODE_3BD extrusion;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &dimension_ang2ln->extrusion, sizeof(dimension_ang2ln->extrusion)))
       pass ("DIMENSION_ANG2LN.extrusion");
@@ -7829,7 +7829,7 @@ static int test_DIMENSION_ANG2LN (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD ins_scale;
+    BITCODE_3BD ins_scale;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "ins_scale", &ins_scale, NULL)
         && !memcmp(&ins_scale, &dimension_ang2ln->ins_scale, sizeof(dimension_ang2ln->ins_scale)))
       pass ("DIMENSION_ANG2LN.ins_scale");
@@ -7885,7 +7885,7 @@ static int test_DIMENSION_ANG2LN (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD text_midpt;
+    BITCODE_2RD text_midpt;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "text_midpt", &text_midpt, NULL)
         && !memcmp(&text_midpt, &dimension_ang2ln->text_midpt, sizeof(dimension_ang2ln->text_midpt)))
       pass ("DIMENSION_ANG2LN.text_midpt");
@@ -8049,7 +8049,7 @@ static int test_DIMENSION_ANG3PT (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD clone_ins_pt;
+    BITCODE_2RD clone_ins_pt;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "clone_ins_pt", &clone_ins_pt, NULL)
         && !memcmp(&clone_ins_pt, &dimension_ang3pt->clone_ins_pt, sizeof(dimension_ang3pt->clone_ins_pt)))
       pass ("DIMENSION_ANG3PT.clone_ins_pt");
@@ -8059,7 +8059,7 @@ static int test_DIMENSION_ANG3PT (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD def_pt;
+    BITCODE_3BD def_pt;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "def_pt", &def_pt, NULL)
         && !memcmp(&def_pt, &dimension_ang3pt->def_pt, sizeof(dimension_ang3pt->def_pt)))
       pass ("DIMENSION_ANG3PT.def_pt");
@@ -8105,7 +8105,7 @@ static int test_DIMENSION_ANG3PT (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD extrusion;
+    BITCODE_3BD extrusion;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &dimension_ang3pt->extrusion, sizeof(dimension_ang3pt->extrusion)))
       pass ("DIMENSION_ANG3PT.extrusion");
@@ -8233,7 +8233,7 @@ static int test_DIMENSION_ANG3PT (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD ins_scale;
+    BITCODE_3BD ins_scale;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "ins_scale", &ins_scale, NULL)
         && !memcmp(&ins_scale, &dimension_ang3pt->ins_scale, sizeof(dimension_ang3pt->ins_scale)))
       pass ("DIMENSION_ANG3PT.ins_scale");
@@ -8289,7 +8289,7 @@ static int test_DIMENSION_ANG3PT (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD text_midpt;
+    BITCODE_2RD text_midpt;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "text_midpt", &text_midpt, NULL)
         && !memcmp(&text_midpt, &dimension_ang3pt->text_midpt, sizeof(dimension_ang3pt->text_midpt)))
       pass ("DIMENSION_ANG3PT.text_midpt");
@@ -8433,7 +8433,7 @@ static int test_DIMENSION_DIAMETER (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD clone_ins_pt;
+    BITCODE_2RD clone_ins_pt;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "clone_ins_pt", &clone_ins_pt, NULL)
         && !memcmp(&clone_ins_pt, &dimension_diameter->clone_ins_pt, sizeof(dimension_diameter->clone_ins_pt)))
       pass ("DIMENSION_DIAMETER.clone_ins_pt");
@@ -8443,7 +8443,7 @@ static int test_DIMENSION_DIAMETER (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD def_pt;
+    BITCODE_3BD def_pt;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "def_pt", &def_pt, NULL)
         && !memcmp(&def_pt, &dimension_diameter->def_pt, sizeof(dimension_diameter->def_pt)))
       pass ("DIMENSION_DIAMETER.def_pt");
@@ -8489,7 +8489,7 @@ static int test_DIMENSION_DIAMETER (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD extrusion;
+    BITCODE_3BD extrusion;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &dimension_diameter->extrusion, sizeof(dimension_diameter->extrusion)))
       pass ("DIMENSION_DIAMETER.extrusion");
@@ -8617,7 +8617,7 @@ static int test_DIMENSION_DIAMETER (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD ins_scale;
+    BITCODE_3BD ins_scale;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "ins_scale", &ins_scale, NULL)
         && !memcmp(&ins_scale, &dimension_diameter->ins_scale, sizeof(dimension_diameter->ins_scale)))
       pass ("DIMENSION_DIAMETER.ins_scale");
@@ -8691,7 +8691,7 @@ static int test_DIMENSION_DIAMETER (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD text_midpt;
+    BITCODE_2RD text_midpt;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "text_midpt", &text_midpt, NULL)
         && !memcmp(&text_midpt, &dimension_diameter->text_midpt, sizeof(dimension_diameter->text_midpt)))
       pass ("DIMENSION_DIAMETER.text_midpt");
@@ -8855,7 +8855,7 @@ static int test_DIMENSION_LINEAR (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD clone_ins_pt;
+    BITCODE_2RD clone_ins_pt;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "clone_ins_pt", &clone_ins_pt, NULL)
         && !memcmp(&clone_ins_pt, &dimension_linear->clone_ins_pt, sizeof(dimension_linear->clone_ins_pt)))
       pass ("DIMENSION_LINEAR.clone_ins_pt");
@@ -8865,7 +8865,7 @@ static int test_DIMENSION_LINEAR (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD def_pt;
+    BITCODE_3BD def_pt;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "def_pt", &def_pt, NULL)
         && !memcmp(&def_pt, &dimension_linear->def_pt, sizeof(dimension_linear->def_pt)))
       pass ("DIMENSION_LINEAR.def_pt");
@@ -8947,7 +8947,7 @@ static int test_DIMENSION_LINEAR (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD extrusion;
+    BITCODE_3BD extrusion;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &dimension_linear->extrusion, sizeof(dimension_linear->extrusion)))
       pass ("DIMENSION_LINEAR.extrusion");
@@ -9065,7 +9065,7 @@ static int test_DIMENSION_LINEAR (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD ins_scale;
+    BITCODE_3BD ins_scale;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "ins_scale", &ins_scale, NULL)
         && !memcmp(&ins_scale, &dimension_linear->ins_scale, sizeof(dimension_linear->ins_scale)))
       pass ("DIMENSION_LINEAR.ins_scale");
@@ -9121,7 +9121,7 @@ static int test_DIMENSION_LINEAR (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD text_midpt;
+    BITCODE_2RD text_midpt;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "text_midpt", &text_midpt, NULL)
         && !memcmp(&text_midpt, &dimension_linear->text_midpt, sizeof(dimension_linear->text_midpt)))
       pass ("DIMENSION_LINEAR.text_midpt");
@@ -9265,7 +9265,7 @@ static int test_DIMENSION_ORDINATE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD clone_ins_pt;
+    BITCODE_2RD clone_ins_pt;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "clone_ins_pt", &clone_ins_pt, NULL)
         && !memcmp(&clone_ins_pt, &dimension_ordinate->clone_ins_pt, sizeof(dimension_ordinate->clone_ins_pt)))
       pass ("DIMENSION_ORDINATE.clone_ins_pt");
@@ -9275,7 +9275,7 @@ static int test_DIMENSION_ORDINATE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD def_pt;
+    BITCODE_3BD def_pt;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "def_pt", &def_pt, NULL)
         && !memcmp(&def_pt, &dimension_ordinate->def_pt, sizeof(dimension_ordinate->def_pt)))
       pass ("DIMENSION_ORDINATE.def_pt");
@@ -9321,7 +9321,7 @@ static int test_DIMENSION_ORDINATE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD extrusion;
+    BITCODE_3BD extrusion;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &dimension_ordinate->extrusion, sizeof(dimension_ordinate->extrusion)))
       pass ("DIMENSION_ORDINATE.extrusion");
@@ -9467,7 +9467,7 @@ static int test_DIMENSION_ORDINATE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD ins_scale;
+    BITCODE_3BD ins_scale;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "ins_scale", &ins_scale, NULL)
         && !memcmp(&ins_scale, &dimension_ordinate->ins_scale, sizeof(dimension_ordinate->ins_scale)))
       pass ("DIMENSION_ORDINATE.ins_scale");
@@ -9533,7 +9533,7 @@ static int test_DIMENSION_ORDINATE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD text_midpt;
+    BITCODE_2RD text_midpt;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "text_midpt", &text_midpt, NULL)
         && !memcmp(&text_midpt, &dimension_ordinate->text_midpt, sizeof(dimension_ordinate->text_midpt)))
       pass ("DIMENSION_ORDINATE.text_midpt");
@@ -9677,7 +9677,7 @@ static int test_DIMENSION_RADIUS (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD clone_ins_pt;
+    BITCODE_2RD clone_ins_pt;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "clone_ins_pt", &clone_ins_pt, NULL)
         && !memcmp(&clone_ins_pt, &dimension_radius->clone_ins_pt, sizeof(dimension_radius->clone_ins_pt)))
       pass ("DIMENSION_RADIUS.clone_ins_pt");
@@ -9687,7 +9687,7 @@ static int test_DIMENSION_RADIUS (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD def_pt;
+    BITCODE_3BD def_pt;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "def_pt", &def_pt, NULL)
         && !memcmp(&def_pt, &dimension_radius->def_pt, sizeof(dimension_radius->def_pt)))
       pass ("DIMENSION_RADIUS.def_pt");
@@ -9733,7 +9733,7 @@ static int test_DIMENSION_RADIUS (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD extrusion;
+    BITCODE_3BD extrusion;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &dimension_radius->extrusion, sizeof(dimension_radius->extrusion)))
       pass ("DIMENSION_RADIUS.extrusion");
@@ -9861,7 +9861,7 @@ static int test_DIMENSION_RADIUS (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD ins_scale;
+    BITCODE_3BD ins_scale;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "ins_scale", &ins_scale, NULL)
         && !memcmp(&ins_scale, &dimension_radius->ins_scale, sizeof(dimension_radius->ins_scale)))
       pass ("DIMENSION_RADIUS.ins_scale");
@@ -9935,7 +9935,7 @@ static int test_DIMENSION_RADIUS (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD text_midpt;
+    BITCODE_2RD text_midpt;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "text_midpt", &text_midpt, NULL)
         && !memcmp(&text_midpt, &dimension_radius->text_midpt, sizeof(dimension_radius->text_midpt)))
       pass ("DIMENSION_RADIUS.text_midpt");
@@ -10113,7 +10113,7 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
   int error = 0;
   Dwg_Entity_EXTRUDEDSURFACE *extrudedsurface = obj->tio.entity->tio.EXTRUDEDSURFACE;
   {
-    unsigned char* acis_data;
+    BITCODE_RC* acis_data;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "acis_data", &acis_data, NULL)
         && !strcmp((char*)&acis_data, (char*)&extrudedsurface->acis_data))
       pass ("EXTRUDEDSURFACE.acis_data");
@@ -10267,7 +10267,7 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    unsigned int* block_size;
+    BITCODE_BL* block_size;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "block_size", &block_size, NULL)
         && !memcmp(&block_size, &extrudedsurface->block_size, sizeof(extrudedsurface->block_size)))
       pass ("EXTRUDEDSURFACE.block_size");
@@ -10561,7 +10561,7 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD point;
+    BITCODE_3BD point;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "point", &point, NULL)
         && !memcmp(&point, &extrudedsurface->point, sizeof(extrudedsurface->point)))
       pass ("EXTRUDEDSURFACE.point");
@@ -11493,7 +11493,7 @@ static int test_HATCH (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_2RD * seeds;
+    BITCODE_2RD seeds;
     if (dwg_dynapi_entity_value(hatch, "HATCH", "seeds", &seeds, NULL)
         && !memcmp(&seeds, &hatch->seeds, sizeof(hatch->seeds)))
       pass ("HATCH.seeds");
@@ -12303,7 +12303,7 @@ static int test_IMAGE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD size;
+    BITCODE_2RD size;
     if (dwg_dynapi_entity_value(image, "IMAGE", "size", &size, NULL)
         && !memcmp(&size, &image->size, sizeof(image->size)))
       pass ("IMAGE.size");
@@ -12349,25 +12349,25 @@ static int test_INSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H  block_header;
+    BITCODE_H block_header;
     if (dwg_dynapi_entity_value(insert, "INSERT", "block_header", &block_header, NULL) &&
         block_header == insert->block_header)
-      pass ("INSERT.block_header [H ]");
+      pass ("INSERT.block_header [H]");
     else
       {
-        fail ("INSERT.block_header [H ] %p != %p", insert->block_header, block_header); error++;
+        fail ("INSERT.block_header [H] %p != %p", insert->block_header, block_header); error++;
       }
     block_header++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "block_header", &block_header) &&
         block_header == insert->block_header)
-      pass ("INSERT.block_header [H ]");
+      pass ("INSERT.block_header [H]");
     else
       {
-        fail ("INSERT.block_header [H ] %p != %p", insert->block_header, block_header); error++;
+        fail ("INSERT.block_header [H] %p != %p", insert->block_header, block_header); error++;
       }
   }
   {
-    BITCODE_3DPOINT  extrusion;
+    BITCODE_3DPOINT extrusion;
     if (dwg_dynapi_entity_value(insert, "INSERT", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &insert->extrusion, sizeof(insert->extrusion)))
       pass ("INSERT.extrusion");
@@ -12377,43 +12377,43 @@ static int test_INSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H  first_attrib;
+    BITCODE_H first_attrib;
     if (dwg_dynapi_entity_value(insert, "INSERT", "first_attrib", &first_attrib, NULL) &&
         first_attrib == insert->first_attrib)
-      pass ("INSERT.first_attrib [H ]");
+      pass ("INSERT.first_attrib [H]");
     else
       {
-        fail ("INSERT.first_attrib [H ] %p != %p", insert->first_attrib, first_attrib); error++;
+        fail ("INSERT.first_attrib [H] %p != %p", insert->first_attrib, first_attrib); error++;
       }
     first_attrib++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "first_attrib", &first_attrib) &&
         first_attrib == insert->first_attrib)
-      pass ("INSERT.first_attrib [H ]");
+      pass ("INSERT.first_attrib [H]");
     else
       {
-        fail ("INSERT.first_attrib [H ] %p != %p", insert->first_attrib, first_attrib); error++;
+        fail ("INSERT.first_attrib [H] %p != %p", insert->first_attrib, first_attrib); error++;
       }
   }
   {
-    BITCODE_B        has_attribs;
+    BITCODE_B has_attribs;
     if (dwg_dynapi_entity_value(insert, "INSERT", "has_attribs", &has_attribs, NULL) &&
         has_attribs == insert->has_attribs)
-      pass ("INSERT.has_attribs [B       ]");
+      pass ("INSERT.has_attribs [B]");
     else
       {
-        fail ("INSERT.has_attribs [B       ] %p != %p", insert->has_attribs, has_attribs); error++;
+        fail ("INSERT.has_attribs [B] " FORMAT_B " != " FORMAT_B "", insert->has_attribs, has_attribs); error++;
       }
     has_attribs++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "has_attribs", &has_attribs) &&
         has_attribs == insert->has_attribs)
-      pass ("INSERT.has_attribs [B       ]");
+      pass ("INSERT.has_attribs [B]");
     else
       {
-        fail ("INSERT.has_attribs [B       ] %p != %p", insert->has_attribs, has_attribs); error++;
+        fail ("INSERT.has_attribs [B] " FORMAT_B " != " FORMAT_B "", insert->has_attribs, has_attribs); error++;
       }
   }
   {
-    BITCODE_3DPOINT  ins_pt;
+    BITCODE_3DPOINT ins_pt;
     if (dwg_dynapi_entity_value(insert, "INSERT", "ins_pt", &ins_pt, NULL)
         && !memcmp(&ins_pt, &insert->ins_pt, sizeof(insert->ins_pt)))
       pass ("INSERT.ins_pt");
@@ -12423,39 +12423,39 @@ static int test_INSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H  last_attrib;
+    BITCODE_H last_attrib;
     if (dwg_dynapi_entity_value(insert, "INSERT", "last_attrib", &last_attrib, NULL) &&
         last_attrib == insert->last_attrib)
-      pass ("INSERT.last_attrib [H ]");
+      pass ("INSERT.last_attrib [H]");
     else
       {
-        fail ("INSERT.last_attrib [H ] %p != %p", insert->last_attrib, last_attrib); error++;
+        fail ("INSERT.last_attrib [H] %p != %p", insert->last_attrib, last_attrib); error++;
       }
     last_attrib++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "last_attrib", &last_attrib) &&
         last_attrib == insert->last_attrib)
-      pass ("INSERT.last_attrib [H ]");
+      pass ("INSERT.last_attrib [H]");
     else
       {
-        fail ("INSERT.last_attrib [H ] %p != %p", insert->last_attrib, last_attrib); error++;
+        fail ("INSERT.last_attrib [H] %p != %p", insert->last_attrib, last_attrib); error++;
       }
   }
   {
-    BITCODE_BL       num_owned;
+    BITCODE_BL num_owned;
     if (dwg_dynapi_entity_value(insert, "INSERT", "num_owned", &num_owned, NULL) &&
         num_owned == insert->num_owned)
-      pass ("INSERT.num_owned [BL      ]");
+      pass ("INSERT.num_owned [BL]");
     else
       {
-        fail ("INSERT.num_owned [BL      ] %p != %p", insert->num_owned, num_owned); error++;
+        fail ("INSERT.num_owned [BL] %u != %u", insert->num_owned, num_owned); error++;
       }
     num_owned++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "num_owned", &num_owned) &&
         num_owned == insert->num_owned)
-      pass ("INSERT.num_owned [BL      ]");
+      pass ("INSERT.num_owned [BL]");
     else
       {
-        fail ("INSERT.num_owned [BL      ] %p != %p", insert->num_owned, num_owned); error++;
+        fail ("INSERT.num_owned [BL] %u != %u", insert->num_owned, num_owned); error++;
       }
   }
   {
@@ -12469,25 +12469,25 @@ static int test_INSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_BD       rotation;
+    BITCODE_BD rotation;
     if (dwg_dynapi_entity_value(insert, "INSERT", "rotation", &rotation, NULL) &&
         rotation == insert->rotation)
-      pass ("INSERT.rotation [BD      ]");
+      pass ("INSERT.rotation [BD]");
     else
       {
-        fail ("INSERT.rotation [BD      ] %p != %p", insert->rotation, rotation); error++;
+        fail ("INSERT.rotation [BD] %g != %g", insert->rotation, rotation); error++;
       }
     rotation++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "rotation", &rotation) &&
         rotation == insert->rotation)
-      pass ("INSERT.rotation [BD      ]");
+      pass ("INSERT.rotation [BD]");
     else
       {
-        fail ("INSERT.rotation [BD      ] %p != %p", insert->rotation, rotation); error++;
+        fail ("INSERT.rotation [BD] %g != %g", insert->rotation, rotation); error++;
       }
   }
   {
-    BITCODE_3DPOINT  scale;
+    BITCODE_3DPOINT scale;
     if (dwg_dynapi_entity_value(insert, "INSERT", "scale", &scale, NULL)
         && !memcmp(&scale, &insert->scale, sizeof(insert->scale)))
       pass ("INSERT.scale");
@@ -12497,39 +12497,39 @@ static int test_INSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_BB       scale_flag;
+    BITCODE_BB scale_flag;
     if (dwg_dynapi_entity_value(insert, "INSERT", "scale_flag", &scale_flag, NULL) &&
         scale_flag == insert->scale_flag)
-      pass ("INSERT.scale_flag [BB      ]");
+      pass ("INSERT.scale_flag [BB]");
     else
       {
-        fail ("INSERT.scale_flag [BB      ] %p != %p", insert->scale_flag, scale_flag); error++;
+        fail ("INSERT.scale_flag [BB] " FORMAT_BB " != " FORMAT_BB "", insert->scale_flag, scale_flag); error++;
       }
     scale_flag++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "scale_flag", &scale_flag) &&
         scale_flag == insert->scale_flag)
-      pass ("INSERT.scale_flag [BB      ]");
+      pass ("INSERT.scale_flag [BB]");
     else
       {
-        fail ("INSERT.scale_flag [BB      ] %p != %p", insert->scale_flag, scale_flag); error++;
+        fail ("INSERT.scale_flag [BB] " FORMAT_BB " != " FORMAT_BB "", insert->scale_flag, scale_flag); error++;
       }
   }
   {
-    BITCODE_H  seqend;
+    BITCODE_H seqend;
     if (dwg_dynapi_entity_value(insert, "INSERT", "seqend", &seqend, NULL) &&
         seqend == insert->seqend)
-      pass ("INSERT.seqend [H ]");
+      pass ("INSERT.seqend [H]");
     else
       {
-        fail ("INSERT.seqend [H ] %p != %p", insert->seqend, seqend); error++;
+        fail ("INSERT.seqend [H] %p != %p", insert->seqend, seqend); error++;
       }
     seqend++;
     if (dwg_dynapi_entity_set_value(insert, "INSERT", "seqend", &seqend) &&
         seqend == insert->seqend)
-      pass ("INSERT.seqend [H ]");
+      pass ("INSERT.seqend [H]");
     else
       {
-        fail ("INSERT.seqend [H ] %p != %p", insert->seqend, seqend); error++;
+        fail ("INSERT.seqend [H] %p != %p", insert->seqend, seqend); error++;
       }
   }
   return error;
@@ -13383,7 +13383,7 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
   int error = 0;
   Dwg_Entity_LOFTEDSURFACE *loftedsurface = obj->tio.entity->tio.LOFTEDSURFACE;
   {
-    unsigned char* acis_data;
+    BITCODE_RC* acis_data;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "acis_data", &acis_data, NULL)
         && !strcmp((char*)&acis_data, (char*)&loftedsurface->acis_data))
       pass ("LOFTEDSURFACE.acis_data");
@@ -13483,7 +13483,7 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    unsigned int* block_size;
+    BITCODE_BL* block_size;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "block_size", &block_size, NULL)
         && !memcmp(&block_size, &loftedsurface->block_size, sizeof(loftedsurface->block_size)))
       pass ("LOFTEDSURFACE.block_size");
@@ -13815,7 +13815,7 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD point;
+    BITCODE_3BD point;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "point", &point, NULL)
         && !memcmp(&point, &loftedsurface->point, sizeof(loftedsurface->point)))
       pass ("LOFTEDSURFACE.point");
@@ -14305,43 +14305,43 @@ static int test_MINSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H  block_header;
+    BITCODE_H block_header;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "block_header", &block_header, NULL) &&
         block_header == minsert->block_header)
-      pass ("MINSERT.block_header [H ]");
+      pass ("MINSERT.block_header [H]");
     else
       {
-        fail ("MINSERT.block_header [H ] %p != %p", minsert->block_header, block_header); error++;
+        fail ("MINSERT.block_header [H] %p != %p", minsert->block_header, block_header); error++;
       }
     block_header++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "block_header", &block_header) &&
         block_header == minsert->block_header)
-      pass ("MINSERT.block_header [H ]");
+      pass ("MINSERT.block_header [H]");
     else
       {
-        fail ("MINSERT.block_header [H ] %p != %p", minsert->block_header, block_header); error++;
+        fail ("MINSERT.block_header [H] %p != %p", minsert->block_header, block_header); error++;
       }
   }
   {
-    BITCODE_BD       col_spacing;
+    BITCODE_BD col_spacing;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "col_spacing", &col_spacing, NULL) &&
         col_spacing == minsert->col_spacing)
-      pass ("MINSERT.col_spacing [BD      ]");
+      pass ("MINSERT.col_spacing [BD]");
     else
       {
-        fail ("MINSERT.col_spacing [BD      ] %p != %p", minsert->col_spacing, col_spacing); error++;
+        fail ("MINSERT.col_spacing [BD] %g != %g", minsert->col_spacing, col_spacing); error++;
       }
     col_spacing++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "col_spacing", &col_spacing) &&
         col_spacing == minsert->col_spacing)
-      pass ("MINSERT.col_spacing [BD      ]");
+      pass ("MINSERT.col_spacing [BD]");
     else
       {
-        fail ("MINSERT.col_spacing [BD      ] %p != %p", minsert->col_spacing, col_spacing); error++;
+        fail ("MINSERT.col_spacing [BD] %g != %g", minsert->col_spacing, col_spacing); error++;
       }
   }
   {
-    BITCODE_3DPOINT  extrusion;
+    BITCODE_3DPOINT extrusion;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "extrusion", &extrusion, NULL)
         && !memcmp(&extrusion, &minsert->extrusion, sizeof(minsert->extrusion)))
       pass ("MINSERT.extrusion");
@@ -14351,43 +14351,43 @@ static int test_MINSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H  first_attrib;
+    BITCODE_H first_attrib;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "first_attrib", &first_attrib, NULL) &&
         first_attrib == minsert->first_attrib)
-      pass ("MINSERT.first_attrib [H ]");
+      pass ("MINSERT.first_attrib [H]");
     else
       {
-        fail ("MINSERT.first_attrib [H ] %p != %p", minsert->first_attrib, first_attrib); error++;
+        fail ("MINSERT.first_attrib [H] %p != %p", minsert->first_attrib, first_attrib); error++;
       }
     first_attrib++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "first_attrib", &first_attrib) &&
         first_attrib == minsert->first_attrib)
-      pass ("MINSERT.first_attrib [H ]");
+      pass ("MINSERT.first_attrib [H]");
     else
       {
-        fail ("MINSERT.first_attrib [H ] %p != %p", minsert->first_attrib, first_attrib); error++;
+        fail ("MINSERT.first_attrib [H] %p != %p", minsert->first_attrib, first_attrib); error++;
       }
   }
   {
-    BITCODE_B        has_attribs;
+    BITCODE_B has_attribs;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "has_attribs", &has_attribs, NULL) &&
         has_attribs == minsert->has_attribs)
-      pass ("MINSERT.has_attribs [B       ]");
+      pass ("MINSERT.has_attribs [B]");
     else
       {
-        fail ("MINSERT.has_attribs [B       ] %p != %p", minsert->has_attribs, has_attribs); error++;
+        fail ("MINSERT.has_attribs [B] " FORMAT_B " != " FORMAT_B "", minsert->has_attribs, has_attribs); error++;
       }
     has_attribs++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "has_attribs", &has_attribs) &&
         has_attribs == minsert->has_attribs)
-      pass ("MINSERT.has_attribs [B       ]");
+      pass ("MINSERT.has_attribs [B]");
     else
       {
-        fail ("MINSERT.has_attribs [B       ] %p != %p", minsert->has_attribs, has_attribs); error++;
+        fail ("MINSERT.has_attribs [B] " FORMAT_B " != " FORMAT_B "", minsert->has_attribs, has_attribs); error++;
       }
   }
   {
-    BITCODE_3DPOINT  ins_pt;
+    BITCODE_3DPOINT ins_pt;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "ins_pt", &ins_pt, NULL)
         && !memcmp(&ins_pt, &minsert->ins_pt, sizeof(minsert->ins_pt)))
       pass ("MINSERT.ins_pt");
@@ -14397,75 +14397,75 @@ static int test_MINSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H  last_attrib;
+    BITCODE_H last_attrib;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "last_attrib", &last_attrib, NULL) &&
         last_attrib == minsert->last_attrib)
-      pass ("MINSERT.last_attrib [H ]");
+      pass ("MINSERT.last_attrib [H]");
     else
       {
-        fail ("MINSERT.last_attrib [H ] %p != %p", minsert->last_attrib, last_attrib); error++;
+        fail ("MINSERT.last_attrib [H] %p != %p", minsert->last_attrib, last_attrib); error++;
       }
     last_attrib++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "last_attrib", &last_attrib) &&
         last_attrib == minsert->last_attrib)
-      pass ("MINSERT.last_attrib [H ]");
+      pass ("MINSERT.last_attrib [H]");
     else
       {
-        fail ("MINSERT.last_attrib [H ] %p != %p", minsert->last_attrib, last_attrib); error++;
+        fail ("MINSERT.last_attrib [H] %p != %p", minsert->last_attrib, last_attrib); error++;
       }
   }
   {
-    BITCODE_BS       num_cols;
+    BITCODE_BS num_cols;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "num_cols", &num_cols, NULL) &&
         num_cols == minsert->num_cols)
-      pass ("MINSERT.num_cols [BS      ]");
+      pass ("MINSERT.num_cols [BS]");
     else
       {
-        fail ("MINSERT.num_cols [BS      ] %p != %p", minsert->num_cols, num_cols); error++;
+        fail ("MINSERT.num_cols [BS] %d != %d", minsert->num_cols, num_cols); error++;
       }
     num_cols++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "num_cols", &num_cols) &&
         num_cols == minsert->num_cols)
-      pass ("MINSERT.num_cols [BS      ]");
+      pass ("MINSERT.num_cols [BS]");
     else
       {
-        fail ("MINSERT.num_cols [BS      ] %p != %p", minsert->num_cols, num_cols); error++;
+        fail ("MINSERT.num_cols [BS] %d != %d", minsert->num_cols, num_cols); error++;
       }
   }
   {
-    BITCODE_BL       num_owned;
+    BITCODE_BL num_owned;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "num_owned", &num_owned, NULL) &&
         num_owned == minsert->num_owned)
-      pass ("MINSERT.num_owned [BL      ]");
+      pass ("MINSERT.num_owned [BL]");
     else
       {
-        fail ("MINSERT.num_owned [BL      ] %p != %p", minsert->num_owned, num_owned); error++;
+        fail ("MINSERT.num_owned [BL] %u != %u", minsert->num_owned, num_owned); error++;
       }
     num_owned++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "num_owned", &num_owned) &&
         num_owned == minsert->num_owned)
-      pass ("MINSERT.num_owned [BL      ]");
+      pass ("MINSERT.num_owned [BL]");
     else
       {
-        fail ("MINSERT.num_owned [BL      ] %p != %p", minsert->num_owned, num_owned); error++;
+        fail ("MINSERT.num_owned [BL] %u != %u", minsert->num_owned, num_owned); error++;
       }
   }
   {
-    BITCODE_BS       num_rows;
+    BITCODE_BS num_rows;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "num_rows", &num_rows, NULL) &&
         num_rows == minsert->num_rows)
-      pass ("MINSERT.num_rows [BS      ]");
+      pass ("MINSERT.num_rows [BS]");
     else
       {
-        fail ("MINSERT.num_rows [BS      ] %p != %p", minsert->num_rows, num_rows); error++;
+        fail ("MINSERT.num_rows [BS] %d != %d", minsert->num_rows, num_rows); error++;
       }
     num_rows++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "num_rows", &num_rows) &&
         num_rows == minsert->num_rows)
-      pass ("MINSERT.num_rows [BS      ]");
+      pass ("MINSERT.num_rows [BS]");
     else
       {
-        fail ("MINSERT.num_rows [BS      ] %p != %p", minsert->num_rows, num_rows); error++;
+        fail ("MINSERT.num_rows [BS] %d != %d", minsert->num_rows, num_rows); error++;
       }
   }
   {
@@ -14479,43 +14479,43 @@ static int test_MINSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_BD       rotation;
+    BITCODE_BD rotation;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "rotation", &rotation, NULL) &&
         rotation == minsert->rotation)
-      pass ("MINSERT.rotation [BD      ]");
+      pass ("MINSERT.rotation [BD]");
     else
       {
-        fail ("MINSERT.rotation [BD      ] %p != %p", minsert->rotation, rotation); error++;
+        fail ("MINSERT.rotation [BD] %g != %g", minsert->rotation, rotation); error++;
       }
     rotation++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "rotation", &rotation) &&
         rotation == minsert->rotation)
-      pass ("MINSERT.rotation [BD      ]");
+      pass ("MINSERT.rotation [BD]");
     else
       {
-        fail ("MINSERT.rotation [BD      ] %p != %p", minsert->rotation, rotation); error++;
+        fail ("MINSERT.rotation [BD] %g != %g", minsert->rotation, rotation); error++;
       }
   }
   {
-    BITCODE_BD       row_spacing;
+    BITCODE_BD row_spacing;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "row_spacing", &row_spacing, NULL) &&
         row_spacing == minsert->row_spacing)
-      pass ("MINSERT.row_spacing [BD      ]");
+      pass ("MINSERT.row_spacing [BD]");
     else
       {
-        fail ("MINSERT.row_spacing [BD      ] %p != %p", minsert->row_spacing, row_spacing); error++;
+        fail ("MINSERT.row_spacing [BD] %g != %g", minsert->row_spacing, row_spacing); error++;
       }
     row_spacing++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "row_spacing", &row_spacing) &&
         row_spacing == minsert->row_spacing)
-      pass ("MINSERT.row_spacing [BD      ]");
+      pass ("MINSERT.row_spacing [BD]");
     else
       {
-        fail ("MINSERT.row_spacing [BD      ] %p != %p", minsert->row_spacing, row_spacing); error++;
+        fail ("MINSERT.row_spacing [BD] %g != %g", minsert->row_spacing, row_spacing); error++;
       }
   }
   {
-    BITCODE_3DPOINT  scale;
+    BITCODE_3DPOINT scale;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "scale", &scale, NULL)
         && !memcmp(&scale, &minsert->scale, sizeof(minsert->scale)))
       pass ("MINSERT.scale");
@@ -14525,39 +14525,39 @@ static int test_MINSERT (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_BB       scale_flag;
+    BITCODE_BB scale_flag;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "scale_flag", &scale_flag, NULL) &&
         scale_flag == minsert->scale_flag)
-      pass ("MINSERT.scale_flag [BB      ]");
+      pass ("MINSERT.scale_flag [BB]");
     else
       {
-        fail ("MINSERT.scale_flag [BB      ] %p != %p", minsert->scale_flag, scale_flag); error++;
+        fail ("MINSERT.scale_flag [BB] " FORMAT_BB " != " FORMAT_BB "", minsert->scale_flag, scale_flag); error++;
       }
     scale_flag++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "scale_flag", &scale_flag) &&
         scale_flag == minsert->scale_flag)
-      pass ("MINSERT.scale_flag [BB      ]");
+      pass ("MINSERT.scale_flag [BB]");
     else
       {
-        fail ("MINSERT.scale_flag [BB      ] %p != %p", minsert->scale_flag, scale_flag); error++;
+        fail ("MINSERT.scale_flag [BB] " FORMAT_BB " != " FORMAT_BB "", minsert->scale_flag, scale_flag); error++;
       }
   }
   {
-    BITCODE_H  seqend;
+    BITCODE_H seqend;
     if (dwg_dynapi_entity_value(minsert, "MINSERT", "seqend", &seqend, NULL) &&
         seqend == minsert->seqend)
-      pass ("MINSERT.seqend [H ]");
+      pass ("MINSERT.seqend [H]");
     else
       {
-        fail ("MINSERT.seqend [H ] %p != %p", minsert->seqend, seqend); error++;
+        fail ("MINSERT.seqend [H] %p != %p", minsert->seqend, seqend); error++;
       }
     seqend++;
     if (dwg_dynapi_entity_set_value(minsert, "MINSERT", "seqend", &seqend) &&
         seqend == minsert->seqend)
-      pass ("MINSERT.seqend [H ]");
+      pass ("MINSERT.seqend [H]");
     else
       {
-        fail ("MINSERT.seqend [H ] %p != %p", minsert->seqend, seqend); error++;
+        fail ("MINSERT.seqend [H] %p != %p", minsert->seqend, seqend); error++;
       }
   }
   return error;
@@ -14875,7 +14875,7 @@ static int test_MTEXT (const Dwg_Object *obj)
       }
   }
   {
-    double* column_heights;
+    BITCODE_BD* column_heights;
     if (dwg_dynapi_entity_value(mtext, "MTEXT", "column_heights", &column_heights, NULL)
         && !memcmp(&column_heights, &mtext->column_heights, sizeof(mtext->column_heights)))
       pass ("MTEXT.column_heights");
@@ -16069,7 +16069,7 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
   int error = 0;
   Dwg_Entity_PLANESURFACE *planesurface = obj->tio.entity->tio.PLANESURFACE;
   {
-    unsigned char* acis_data;
+    BITCODE_RC* acis_data;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "acis_data", &acis_data, NULL)
         && !strcmp((char*)&acis_data, (char*)&planesurface->acis_data))
       pass ("PLANESURFACE.acis_data");
@@ -16133,7 +16133,7 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
       }
   }
   {
-    unsigned int* block_size;
+    BITCODE_BL* block_size;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "block_size", &block_size, NULL)
         && !memcmp(&block_size, &planesurface->block_size, sizeof(planesurface->block_size)))
       pass ("PLANESURFACE.block_size");
@@ -16309,7 +16309,7 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD point;
+    BITCODE_3BD point;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "point", &point, NULL)
         && !memcmp(&point, &planesurface->point, sizeof(planesurface->point)))
       pass ("PLANESURFACE.point");
@@ -17361,7 +17361,7 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
   int error = 0;
   Dwg_Entity_REVOLVEDSURFACE *revolvedsurface = obj->tio.entity->tio.REVOLVEDSURFACE;
   {
-    unsigned char* acis_data;
+    BITCODE_RC* acis_data;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "acis_data", &acis_data, NULL)
         && !strcmp((char*)&acis_data, (char*)&revolvedsurface->acis_data))
       pass ("REVOLVEDSURFACE.acis_data");
@@ -17445,7 +17445,7 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    unsigned int* block_size;
+    BITCODE_BL* block_size;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "block_size", &block_size, NULL)
         && !memcmp(&block_size, &revolvedsurface->block_size, sizeof(revolvedsurface->block_size)))
       pass ("REVOLVEDSURFACE.block_size");
@@ -17711,7 +17711,7 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD point;
+    BITCODE_3BD point;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "point", &point, NULL)
         && !memcmp(&point, &revolvedsurface->point, sizeof(revolvedsurface->point)))
       pass ("REVOLVEDSURFACE.point");
@@ -18571,7 +18571,7 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
   int error = 0;
   Dwg_Entity_SWEPTSURFACE *sweptsurface = obj->tio.entity->tio.SWEPTSURFACE;
   {
-    unsigned char* acis_data;
+    BITCODE_RC* acis_data;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "acis_data", &acis_data, NULL)
         && !strcmp((char*)&acis_data, (char*)&sweptsurface->acis_data))
       pass ("SWEPTSURFACE.acis_data");
@@ -18707,7 +18707,7 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    unsigned int* block_size;
+    BITCODE_BL* block_size;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "block_size", &block_size, NULL)
         && !memcmp(&block_size, &sweptsurface->block_size, sizeof(sweptsurface->block_size)))
       pass ("SWEPTSURFACE.block_size");
@@ -19011,7 +19011,7 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_3BD point;
+    BITCODE_3BD point;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "point", &point, NULL)
         && !memcmp(&point, &sweptsurface->point, sizeof(sweptsurface->point)))
       pass ("SWEPTSURFACE.point");
@@ -21871,7 +21871,7 @@ static int test_UNDERLAY (const Dwg_Object *obj)
       }
   }
   {
-    Dwg_Bitcode_2RD* clip_verts;
+    BITCODE_2RD clip_verts;
     if (dwg_dynapi_entity_value(underlay, "UNDERLAY", "clip_verts", &clip_verts, NULL)
         && !memcmp(&clip_verts, &underlay->clip_verts, sizeof(underlay->clip_verts)))
       pass ("UNDERLAY.clip_verts");
@@ -30269,7 +30269,7 @@ static int test_FIELDLIST (const Dwg_Object *obj)
   int error = 0;
   Dwg_Object_FIELDLIST *fieldlist = obj->tio.object->tio.FIELDLIST;
   {
-    BITCODE_H * field_handles;
+    Dwg_Object_Ref* field_handles;
     if (dwg_dynapi_entity_value(fieldlist, "FIELDLIST", "field_handles", &field_handles, NULL)
         && !memcmp(&field_handles, &fieldlist->field_handles, sizeof(fieldlist->field_handles)))
       pass ("FIELDLIST.field_handles");
@@ -35971,21 +35971,21 @@ static int test_PLOTSETTINGS (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H  shade_plot_id;
+    BITCODE_H shade_plot_id;
     if (dwg_dynapi_entity_value(plotsettings, "PLOTSETTINGS", "shade_plot_id", &shade_plot_id, NULL) &&
         shade_plot_id == plotsettings->shade_plot_id)
-      pass ("PLOTSETTINGS.shade_plot_id [H ]");
+      pass ("PLOTSETTINGS.shade_plot_id [H]");
     else
       {
-        fail ("PLOTSETTINGS.shade_plot_id [H ] %p != %p", plotsettings->shade_plot_id, shade_plot_id); error++;
+        fail ("PLOTSETTINGS.shade_plot_id [H] %p != %p", plotsettings->shade_plot_id, shade_plot_id); error++;
       }
     shade_plot_id++;
     if (dwg_dynapi_entity_set_value(plotsettings, "PLOTSETTINGS", "shade_plot_id", &shade_plot_id) &&
         shade_plot_id == plotsettings->shade_plot_id)
-      pass ("PLOTSETTINGS.shade_plot_id [H ]");
+      pass ("PLOTSETTINGS.shade_plot_id [H]");
     else
       {
-        fail ("PLOTSETTINGS.shade_plot_id [H ] %p != %p", plotsettings->shade_plot_id, shade_plot_id); error++;
+        fail ("PLOTSETTINGS.shade_plot_id [H] %p != %p", plotsettings->shade_plot_id, shade_plot_id); error++;
       }
   }
   {

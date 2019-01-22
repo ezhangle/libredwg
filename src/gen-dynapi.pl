@@ -46,7 +46,7 @@ for (sort $c->struct_names) {
     #print " (?)";
   }
 }
-# todo: get BITCODE_ macro types for each struct field
+# get BITCODE_ macro types for each struct field
 open my $in, "<", $hdr or die "hdr: $!";
 while (<$in>) {
   if (!$n) {
@@ -57,14 +57,15 @@ while (<$in>) {
     }
   } elsif (/^\}/) { # close the struct
     $n = '';
-  } elsif ($n and $_ =~ /^ +BITCODE_(.+) (\w.*);/) {
-    $h{$n}{$2} = $1;
+  } elsif ($n and $_ =~ /^ +BITCODE_([\w\*]+)\s+(\w.*);/) {
+    my $type = $1;
+    $type =~ s/\s+$//;
+    $h{$n}{$2} = $type;
   }
 }
-$h{Dwg_Bitcode_3BD} = '3BD';
-$h{Dwg_Bitcode_2BD} = '2BD';
-$h{Dwg_Bitcode_3RD} = '3RD';
-$h{Dwg_Bitcode_2RD} = '2RD';
+#$h{Dwg_Bitcode_3BD} = '3BD';
+#$h{Dwg_Bitcode_2BD} = '2BD';
+#$h{Dwg_Bitcode_3RD} = '3RD';
 #$h{Dwg_Bitcode_2RD} = '2RD';
 close $in;
 
@@ -106,19 +107,27 @@ sub out_struct {
     # unexpand BITCODE_ macros: e.g. unsigned int -> BITCODE_BL
     my $bc = exists $h{$ns} ? $h{$ns}{$name} : undef;
     $type = $bc if $bc;
-    $type =~ s/ $//g;
+    $type =~ s/\s+$//;
     my $size = $bc ? "sizeof(BITCODE_$type)" : "sizeof($type)";
     # TODO: DIMENSION_COMMON, _3DSOLID_FIELDS macros
     if ($type eq 'unsigned char') {
       $type = 'RC';
+    } elsif ($type eq 'unsigned char*') {
+      $type = 'RC*';
     } elsif ($type eq 'double') {
       $type = 'BD';
+    } elsif ($type eq 'double*') {
+      $type = 'BD*';
+    } elsif ($type =~ /^Dwg_Bitcode_(\w+)/) {
+      $type = $1;
     } elsif ($type eq 'char*') {
       $type = 'TV';
     } elsif ($type eq 'unsigned short int') {
       $type = 'BS';
     } elsif ($type eq 'unsigned int') {
       $type = 'BL';
+    } elsif ($type eq 'unsigned int*') {
+      $type = 'BL*';
     } elsif ($type =~ /\b(unsigned|char|int|long|double)\b/) {
       warn "unexpanded $type $n.$name\n";
     } elsif ($type =~ /^struct/) {
@@ -128,14 +137,16 @@ sub out_struct {
       $size = "0";
       #$type = $type->{type}; # size.width, size.height
     }
+    my $need_malloc = ($type =~ /\*$/ or $type =~ /^(T|CMC|H)/) ? 1 : 0;
     my $sname = $name;
     if ($name =~ /\[(\d+)\]$/) {
+      $need_malloc = 0;
       $size = "$1*$size";
       $sname =~ s/\[(\d+)\]$//;
     }
     $ENT{$key}->{$name} = $type;
-    printf $fh "  { \"%s\", \"%s\", %s, OFF(%s,%s) },\n",
-      $name, $type, $size, $tmpl, $sname;
+    printf $fh "  { \"%s\", \"%s\", %s, OFF(%s,%s), %d, %d },\n",
+      $name, $type, $size, $tmpl, $sname, $need_malloc, 0; #TODO: DXF
   }
   print $fh "  {NULL, NULL, 0},\n";
   print $fh "};\n";
@@ -599,9 +610,7 @@ dwg_dynapi_entity_value(void *restrict _obj, const char *restrict dxfname,
     Dwg_Object* obj;
     int error;
     obj = dwg_obj_generic_to_object(_obj, &error);
-    if (!obj)
-      return false;
-    else if (strcmp(obj->dxfname, dxfname))
+    if (obj && strcmp(obj->dxfname, dxfname)) // objid may be 0
       {
         loglevel = obj->parent->opts & 0xf;
         LOG_ERROR("%s: Invalid entity type %s, wanted %s", __FUNCTION__, obj->dxfname, dxfname);
@@ -612,7 +621,7 @@ dwg_dynapi_entity_value(void *restrict _obj, const char *restrict dxfname,
       f = dwg_dynapi_entity_field(dxfname, fieldname);
       if (!f)
         {
-          loglevel = obj->parent->opts & 0xf;
+          if (obj) loglevel = obj->parent->opts & 0xf;
           LOG_ERROR("%s: Invalid %s field %s", __FUNCTION__, dxfname, fieldname);
           return false;
         }
