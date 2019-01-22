@@ -30,7 +30,7 @@ dwg_obj_generic_to_object(const void *restrict obj,
 #endif
 
 static unsigned int loglevel = DWG_LOGLEVEL_ERROR;
- 
+
 #define MAXLEN_ENTITIES 19
 #define MAXLEN_OBJECTS  30
 
